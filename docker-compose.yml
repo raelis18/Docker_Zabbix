@@ -43,12 +43,21 @@ services:
             - "8082:8080"
         env_file:
              - .env_web_zabbix
-            
+        restart: unless-stopped
+
+    grafana:
+        image: grafana/grafana:latest
+        container_name: grafana
+        ports: 
+            - "3000:3000"
+        command: grafana-cli plugins install alexanderzobnin-zabbix-app
         restart: unless-stopped
         
+
 volumes:
     mysql_datadir:
         name: mysql_volume
+
 
 
 
