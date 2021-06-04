@@ -1,5 +1,5 @@
 # Docker_Zabbix
-Arquivos para deployment do Zabbix em containers utilizando compose. <br>
+Arquivos para deployment do Zabbix em containers utilizando compose. <br><br>
 1 - MySql Database <br>
 2 - Zabbix Server <br>
 3 - Zabbix FrontEnd <br>
